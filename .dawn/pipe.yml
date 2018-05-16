@@ -5,20 +5,34 @@ dev:
   - name: clean
   - name: webpack
     watch: true
+    common:
+      disabled: true
+    sourceMap: false
+    template: ./src/*.html
+    folders:
+      js: ./
+  - name: copy
+    files:
+      ./build/(0).json: ./src/*.json
+      ./build/images/: ./src/images/*
+      ./build/lib/: ./src/lib/*
   - name: server
   - name: browser-sync
 
 build:
   - name: clean
   - name: webpack
+    common:
+      disabled: true
+    sourceMap: false
+    template: ./src/*.html
+    folders:
+      js: ./
+  - name: copy
+    files:
+      ./build/(0).json: ./src/*.json
+      ./build/images/: ./src/images/*
+      ./build/lib/: ./src/lib/*
 
 test:
   - name: lint
-  - name: unit
-
-publish:
-  - name: shell
-    script:
-      - dn test
-      - dn build
-      - npm pu
