@@ -17,11 +17,7 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "webRequest",
-    "storage",
-    "webRequestBlocking",
-    "browsingData",
-    "<all_urls>"
+    "storage"
   ],
   "homepage_url": "https://github.com"
 }
