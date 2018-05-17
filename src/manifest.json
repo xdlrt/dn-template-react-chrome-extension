@@ -19,5 +19,6 @@
   "permissions": [
     "storage"
   ],
-  "homepage_url": "https://github.com"
+  "homepage_url": "https://github.com",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
