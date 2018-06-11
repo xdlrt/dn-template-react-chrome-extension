@@ -1,6 +1,6 @@
 {
   "name": "dn-template-react-chrome-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A template for building chrome extension with mota.",
   "scripts": {
     "test": "dn test && dn build -e prod"
